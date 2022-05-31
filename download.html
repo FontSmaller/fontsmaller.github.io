@@ -1,0 +1,56 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>FontSmaller Download</title>
+<link rel="icon" href="favicon.ico" type="image/x-icon"/>
+<meta name="baidu-site-verification" content="6OXYo9L3Bx" />
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?bde3560067749b0dd67ddad3dfa7c489";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</head>
+<body style="margin:25px 25px;margin-top:40px;margin-bottom:40px;">
+<p style=" margin-top:40px;color:#666666;font-size:16px;">
+为了更好地统计软件下载次数，我们设置了此页面。请允许网页使用JavaScript，
+<a href="https://fontsmaller.github.io/" target="_blank" style="font-size:16px;" id="a1">
+	<font color="#666666">点击此处下载</font></a>。
+</p>
+<p style="color:#666666;font-size:16px;">
+In order to count the number of downloads, we set this page. Please allow the page to use JavaScript, and
+<a href="https://fontsmaller.github.io/" target="_blank" style="font-size:16px;" id="a2">
+	<font color="#666666">click here to download</font></a>.
+</p>
+<script type="text/javascript">
+function getValue(url){
+                //首先获取地址
+                var url = url || window.location.href;
+                //获取传值
+                var arr = url.split("?");
+                //判断是否有传值
+                if(arr.length == 1){
+                    return null;
+                }
+                //获取get传值的个数
+                var value_arr = arr[1].split("&");
+                //循环生成返回的对象
+                var obj = {};
+                for(var i = 0; i < value_arr.length; i++){
+                    var key_val = value_arr[i].split("=");
+                    obj[key_val[0]]=key_val[1];
+                }
+                return obj;
+            }
+var skipurl=getValue().url;
+if(skipurl!=""){
+document.getElementById("a1").href=skipurl;
+document.getElementById("a2").href=skipurl;
+}
+
+</script>
+</body>
+</html>
